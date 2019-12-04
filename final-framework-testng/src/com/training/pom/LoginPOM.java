@@ -29,7 +29,7 @@ public class LoginPOM {
 	
 	public void sendPassword(String password) {
 		this.password.clear(); 
-		this.password.sendKeys(password); 
+		this.password.sendKeys(password); //value for password-eg
 	}
 	
 	public void clickLoginBtn() {
