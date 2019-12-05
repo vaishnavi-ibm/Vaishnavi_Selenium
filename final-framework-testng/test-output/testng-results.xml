@@ -1,29 +1,65 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="63204" started-at="2019-12-03T16:04:37 EST" finished-at="2019-12-03T16:05:40 EST">
+  <suite name="Default suite" duration-ms="118422" started-at="2019-12-04T09:07:30 EST" finished-at="2019-12-04T09:09:28 EST">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="63204" started-at="2019-12-03T16:04:37 EST" finished-at="2019-12-03T16:05:40 EST">
-      <class name="com.training.sanity.tests.LogTc8">
-        <test-method status="PASS" signature="setUpBeforeClass()[pri:0, instance:com.training.sanity.tests.LogTc8@3d99d22e]" name="setUpBeforeClass" is-config="true" duration-ms="16" started-at="2019-12-03T16:04:37 EST" finished-at="2019-12-03T16:04:37 EST">
+    <test name="Default test" duration-ms="118422" started-at="2019-12-04T09:07:30 EST" finished-at="2019-12-04T09:09:28 EST">
+      <class name="com.training.regression.tests.LoginXLSTest">
+        <test-method status="PASS" signature="setUpBeforeClass()[pri:0, instance:com.training.regression.tests.LoginXLSTest@49fc609f]" name="setUpBeforeClass" is-config="true" duration-ms="14" started-at="2019-12-04T09:07:30 EST" finished-at="2019-12-04T09:07:30 EST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpBeforeClass -->
-        <test-method status="PASS" signature="setUp()[pri:0, instance:com.training.sanity.tests.LogTc8@3d99d22e]" name="setUp" is-config="true" duration-ms="46344" started-at="2019-12-03T16:04:37 EST" finished-at="2019-12-03T16:05:23 EST">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.training.regression.tests.LoginXLSTest@49fc609f]" name="setUp" is-config="true" duration-ms="40962" started-at="2019-12-04T09:07:30 EST" finished-at="2019-12-04T09:08:11 EST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="validLoginTest()[pri:0, instance:com.training.sanity.tests.LogTc8@3d99d22e]" name="validLoginTest" duration-ms="15802" started-at="2019-12-03T16:05:23 EST" finished-at="2019-12-03T16:05:39 EST">
+        <test-method status="PASS" signature="loginDBTest(java.lang.String, java.lang.String)[pri:0, instance:com.training.regression.tests.LoginXLSTest@49fc609f]" name="loginDBTest" duration-ms="16637" started-at="2019-12-04T09:08:11 EST" data-provider="xls-inputs" finished-at="2019-12-04T09:08:28 EST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[admin]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[admin@123]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- validLoginTest -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.training.sanity.tests.LogTc8@3d99d22e]" name="tearDown" is-config="true" duration-ms="1001" started-at="2019-12-03T16:05:39 EST" finished-at="2019-12-03T16:05:40 EST">
+        </test-method> <!-- loginDBTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.training.regression.tests.LoginXLSTest@49fc609f]" name="tearDown" is-config="true" duration-ms="1330" started-at="2019-12-04T09:08:28 EST" finished-at="2019-12-04T09:08:29 EST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- com.training.sanity.tests.LogTc8 -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.training.regression.tests.LoginXLSTest@49fc609f]" name="setUp" is-config="true" duration-ms="38762" started-at="2019-12-04T09:08:29 EST" finished-at="2019-12-04T09:09:08 EST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="loginDBTest(java.lang.String, java.lang.String)[pri:0, instance:com.training.regression.tests.LoginXLSTest@49fc609f]" name="loginDBTest" duration-ms="19124" started-at="2019-12-04T09:09:08 EST" data-provider="xls-inputs" finished-at="2019-12-04T09:09:27 EST">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[admin]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[admin@123]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginDBTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.training.regression.tests.LoginXLSTest@49fc609f]" name="tearDown" is-config="true" duration-ms="1413" started-at="2019-12-04T09:09:27 EST" finished-at="2019-12-04T09:09:28 EST">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.training.regression.tests.LoginXLSTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

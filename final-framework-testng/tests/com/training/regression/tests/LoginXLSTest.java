@@ -46,14 +46,15 @@ public class LoginXLSTest {
 
 	@AfterMethod
 	public void tearDown() throws Exception {
-		Thread.sleep(1000);
+		Thread.sleep(500);
 		driver.quit();
 	}
 
 	@Test(dataProvider = "xls-inputs", dataProviderClass = LoginDataProviders.class)
 	public void loginDBTest(String userName, String password) {
-		loginPOM.sendUserName(userName);
-		loginPOM.sendPassword(password);
+		loginPOM.clicksignin(); 
+		loginPOM.sendUserName("admin");
+		loginPOM.sendPassword("admin@123");
 		loginPOM.clickLoginBtn();
 		screenShot.captureScreenShot(userName);
 
